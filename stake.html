@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mines Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stake.css" />
+</head>
+<body>
+  <div class="main-container">
+
+    <div class="wallet">
+      <h2>💵  Wallet: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹<span id="wallet1">1000</span></h2>
+    </div>
+
+    <div class="heading">
+      <h1>Mines Game 💣 💎</h1>
+    </div>
+
+    <div class="money">
+      <input class="enter-stake1" type="number" placeholder="Enter Stake" />
+      <input class="enter-mines" type="number" placeholder="Enter Mines" />
+      <button class="start-game">Start</button>
+    </div>
+
+    <div class="rig-box">
+      <label>
+        <input type="checkbox" id="rig-checkbox" />
+        secret mode
+      </label>
+    </div>
+
+    <div class="reward">
+      <h2>Reward: ₹<span id="reward-amount">0</span></h2>
+    </div>
+
+    <div class="buttons">
+      <script>
+        for (let i = 1; i <= 25; i++) {
+          document.write(`<div class="box">${i}</div>`);
+        }
+      </script>
+    </div>
+
+    <div class="result">
+      <h2 id="game-result">Game in progress...</h2>
+    </div>
+
+    <div class="cash-out">
+      <button class="cash">Cash Out</button>
+      <button class="restart">Restart</button>
+      
+
+    </div>
+    <div class="restart-wallet">
+        <button  class= "restart1" onclick="resetWallet()">Reset Wallet</button>
+    </div>
+
+  </div>
+  <script src="stake.js"></script>
+</body>
+</html>
